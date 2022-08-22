@@ -2,6 +2,17 @@ $(function(){
     
     var arySpinnerCtrl = [];
     var spin_speed = 20; //変動スピード
+
+    var aryHistory =[];
+    var aryCount=0;
+
+    var history0 = document.getElementById("history0");
+    var history1 = document.getElementById("history1");
+    var history2 = document.getElementById("history2");
+
+    var history0Array =[];
+    var history1Array =[];
+    var history2Array =[];
     
     //長押し押下時
     $('.btnspinner').on('touchstart mousedown click', function(e){
@@ -59,17 +70,45 @@ $(function(){
         7.0,
     ];
 
-    $('.calculate').on('touchstart mousedown click', function(e){
+    $('.calculate').on('click', function(e){
         
         var cal=0;
+        var numberAry =[];
         
         for(let i=0;i < 9;i++){
             let number = document.getElementById("number"+(i+1)).value;
             cal += ary[i] * number;
-            
+            numberAry.push(number);
         }
+        // 計算結果表示
         var doc0 = document.getElementById("result");
         doc0.innerHTML=cal+"%";
+
+        // 履歴表示
+        console.log(aryCount);
+        if(aryCount==0){
+            history0Array = numberAry.concat();
+            history0.innerHTML=history0Array;
+        }else if(aryCount==1){
+            history1Array = numberAry.concat();
+            history1.innerHTML=history1Array;
+        }else if(aryCount==2){
+            history2Array = numberAry.concat();
+            history2.innerHTML=history2Array;
+        }else if(aryCount > 2){
+            history0Array=history1Array.concat();
+            history1Array=history2Array.concat();
+            history2Array=numberAry.concat();
+
+            history0.innerHTML=history0Array;
+            history1.innerHTML=history1Array;
+            history2.innerHTML=history2Array;
+        }
+        aryCount =aryCount+1;
+        
+        
+
+
         
     });
 });
