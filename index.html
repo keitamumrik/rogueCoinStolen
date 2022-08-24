@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>邪炎ダメージ計算</title>
+    <title>ローグ計算</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="apple-touch-icon" href="apple-touch-icon-152x152.png" />
@@ -25,7 +25,7 @@
             aria-controls="home"
             aria-selected="true"
           >
-            <span class="infurnal-title">計算 calculate</span>
+            <span style="color:#ffc107">計算 calculate</span>
           </button>
         </li>
         <li class="nav-item" role="presentation">
@@ -39,7 +39,7 @@
             aria-controls="profile"
             aria-selected="false"
           >
-            <span class="infurnal-title">履歴 History 3times</span>
+            <span style="color:#ffc107">履歴 History 3times</span>
           </button>
         </li>
       </ul>
@@ -55,19 +55,19 @@
                 <div class = "row mt-5">
                     <div class="col-md-3"></div>
                     <div class ="col-md-9">
-                        <input type="button" value="計算する" class="calculate btn btn-danger">
+                        <input type="button" value="計算する" class="calculate btn btn-warning">
                     </div>
                 </div>
                 <div class = "row my-3 ml-10">
                     <div class="col-md-3"></div>
                     <div class ="col-md-9">
-                        <h2 style="color:white">健康パーセンテージダメージ：<div class="infurnal-text" style="display: inline-block; _display: inline" id="result"></div></h2>
+                        <h1 style="color:white">奪われたコイン：<div style="color: #ffc107; display: inline-block; _display: inline" id="result"></div></h1>
                     </div>
                 </div>
 
                 <div class = "row my-3">
                     <div class="col-md-3"></div>
-                    <div class="d-flex align-items-center col-auto"><img src="image-triming/1.jfif" height="60px"/></div>
+                    <div class="d-flex align-items-center col-auto"><img src="image-triming/1.png" height="60px"/></div>
                     <div class="spinner_area d-flex align-items-center col-auto">
                             <input type="number" id ="number1" value="0" class="counter1" data-max="36" data-min="0" readonly style="width:120px">
                             <input type="button" value="＋" class="btnspinner" data-cal="1" data-target=".counter1">
@@ -76,7 +76,7 @@
                 </div>
                 <div class = "row my-3">
                     <div class="col-md-3"></div>
-                    <div class="d-flex align-items-center col-auto"><img src="image-triming/2.jfif" height="60px"/></div>
+                    <div class="d-flex align-items-center col-auto"><img src="image-triming/2.png" height="60px"/></div>
                     <div class="spinner_area d-flex align-items-center col-auto">
                             <input type="number" id ="number2" value="0" class="counter2" data-max="36" data-min="0" readonly style="width:120px">
                             <input type="button" value="＋" class="btnspinner" data-cal="1" data-target=".counter2">
@@ -85,7 +85,7 @@
                 </div>
                 <div class = "row my-3">
                     <div class="col-md-3"></div>
-                    <div class="d-flex align-items-center col-auto"><img src="image-triming/3.jfif" height="60px"/></div>
+                    <div class="d-flex align-items-center col-auto"><img src="image-triming/3.png" height="60px"/></div>
                     <div class="spinner_area d-flex align-items-center col-auto">
                             <input type="number" id ="number3" value="0" class="counter3" data-max="36" data-min="0" readonly style="width:120px">
                             <input type="button" value="＋" class="btnspinner" data-cal="1" data-target=".counter3">
@@ -94,7 +94,7 @@
                 </div>
                 <div class = "row my-3">
                     <div class="col-md-3"></div>
-                    <div class="d-flex align-items-center col-auto"><img src="image-triming/4.jfif" height="60px"/></div>
+                    <div class="d-flex align-items-center col-auto"><img src="image-triming/4.png" height="60px"/></div>
                     <div class="spinner_area d-flex align-items-center col-auto">
                             <input type="number" id ="number4" value="0" class="counter4" data-max="36" data-min="0" readonly style="width:120px">
                             <input type="button" value="＋" class="btnspinner" data-cal="1" data-target=".counter4">
@@ -103,7 +103,7 @@
                 </div>
                 <div class = "row my-3">
                     <div class="col-md-3"></div>
-                    <div class="d-flex align-items-center col-auto"><img src="image-triming/5.jfif" height="60px"/></div>
+                    <div class="d-flex align-items-center col-auto"><img src="image-triming/5.png" height="60px"/></div>
                     <div class="spinner_area d-flex align-items-center col-auto">
                             <input type="number" id ="number5" value="0" class="counter5" data-max="36" data-min="0" readonly style="width:120px">
                             <input type="button" value="＋" class="btnspinner" data-cal="1" data-target=".counter5">
@@ -112,7 +112,7 @@
                 </div>
                 <div class = "row my-3">
                     <div class="col-md-3"></div>
-                    <div class="d-flex align-items-center col-auto"><img src="image-triming/6.jfif" height="60px"/></div>
+                    <div class="d-flex align-items-center col-auto"><img src="image-triming/6.png" height="60px"/></div>
                     <div class="spinner_area d-flex align-items-center col-auto">
                             <input type="number" id ="number6" value="0" class="counter6" data-max="36" data-min="0" readonly style="width:120px">
                             <input type="button" value="＋" class="btnspinner" data-cal="1" data-target=".counter6">
@@ -121,7 +121,7 @@
                 </div>
                 <div class = "row my-3">
                     <div class="col-md-3"></div>
-                    <div class="d-flex align-items-center col-auto"><img src="image-triming/7.jfif" height="60px"/></div>
+                    <div class="d-flex align-items-center col-auto"><img src="image-triming/7.png" height="60px"/></div>
                     <div class="spinner_area d-flex align-items-center col-auto">
                             <input type="number" id ="number7" value="0" class="counter7" data-max="36" data-min="0" readonly style="width:120px">
                             <input type="button" value="＋" class="btnspinner" data-cal="1" data-target=".counter7">
@@ -130,7 +130,7 @@
                 </div>
                 <div class = "row my-3">
                     <div class="col-md-3"></div>
-                    <div class="d-flex align-items-center col-auto"><img src="image-triming/8.jfif" height="60px"/></div>
+                    <div class="d-flex align-items-center col-auto"><img src="image-triming/8.png" height="60px"/></div>
                     <div class="spinner_area d-flex align-items-center col-auto">
                             <input type="number" id ="number8" value="0" class="counter8" data-max="36" data-min="0" readonly style="width:120px">
                             <input type="button" value="＋" class="btnspinner" data-cal="1" data-target=".counter8">
@@ -139,7 +139,7 @@
                 </div>
                 <div class = "row my-3">
                     <div class="col-md-3"></div>
-                    <div class="d-flex align-items-center col-auto"><img src="image-triming/9.jfif" height="60px"/></div>
+                    <div class="d-flex align-items-center col-auto"><img src="image-triming/9.png" height="60px"/></div>
                     <div class="spinner_area d-flex align-items-center col-auto">
                             <input type="number" id ="number9" value="0" class="counter9" data-max="36" data-min="0" readonly style="width:120px">
                             <input type="button" value="＋" class="btnspinner" data-cal="1" data-target=".counter9">
@@ -205,89 +205,83 @@
          <div clas="container">
             <div class = "row mx-3 mt-5">
                 <div>
-                    <h1 style="color:white">ダメージ比較</h1>
+                    <h1 style="color:white">ローグ獲得コイン比較</h1>
                 </div>
             <table class="table">
                 <thead>
                     <tr>
                         <th scope="col"></th>
-                        <th scope="col">パターン1</div></th>
-                        <th scope="col">パターン2</div></th>
-                        <th scope="col">パターン3</div></th>
-                    </tr>
-                    <tr>
-                        <th scope="col">合計</th>
-                        <th scope="col"><div id ="cal1" class="infurnal-text"></div></th>
-                        <th scope="col"><div id ="cal2" class="infurnal-text"></div></th>
-                        <th scope="col"><div id ="cal3" class="infurnal-text"></div></th>
+                        <th scope="col" style="color:#D3D3D3">パターン1</div></th>
+                        <th scope="col" style="color:#D3D3D3">パターン2</div></th>
+                        <th scope="col" style="color:#D3D3D3">パターン3</div></th>
                     </tr>
                     <tr>
                         <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
+                        <th scope="col"><div id ="cal1" style="color:#ffc107"></div></th>
+                        <th scope="col"><div id ="cal2" style="color:#ffc107"></div></th>
+                        <th scope="col"><div id ="cal3" style="color:#ffc107"></div></th>
                     </tr>
                     <tr>
-                        <th scope="col">Lv</th>
-                        <th scope="col">ユニット数</div></th>
-                        <th scope="col">ユニット数</div></th>
-                        <th scope="col">ユニット数</div></th>
+                        <th scope="col" style="color:#D3D3D3">Lv</th>
+                        <th scope="col" style="color:#D3D3D3">ユニット数</div></th>
+                        <th scope="col" style="color:#D3D3D3">ユニット数</div></th>
+                        <th scope="col" style="color:#D3D3D3">ユニット数</div></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope ="row">1</th>
-                        <td><div id ="history1-1"></div></td>
-                        <td><div id ="history1-2"></div></td>
-                        <td><div id ="history1-3"></div></td>
+                        <th scope ="row" style="color:#D3D3D3">1</th>
+                        <td><div id ="history1-1" style="color:white"></div></td>
+                        <td><div id ="history1-2" style="color:white"></div></td>
+                        <td><div id ="history1-3" style="color:white"></div></td>
                     </tr>
                     <tr>
-                        <th scope ="row">2</th>
-                        <td><div id ="history2-1"></div></td>
-                        <td><div id ="history2-2"></div></td>
-                        <td><div id ="history2-3"></div></td>
+                        <th scope ="row" style="color:#D3D3D3">2</th>
+                        <td><div id ="history2-1" style="color:white"></div></td>
+                        <td><div id ="history2-2" style="color:white"></div></td>
+                        <td><div id ="history2-3" style="color:white"></div></td>
                     </tr>
                     <tr>
-                        <th scope ="row">3</th>
-                        <td><div id ="history3-1"></div></td>
-                        <td><div id ="history3-2"></div></td>
-                        <td><div id ="history3-3"></div></td>
+                        <th scope ="row" style="color:#D3D3D3">3</th>
+                        <td><div id ="history3-1" style="color:white"></div></td>
+                        <td><div id ="history3-2" style="color:white"></div></td>
+                        <td><div id ="history3-3" style="color:white"></div></td>
                     </tr>
                     <tr>
-                        <th scope ="row">4</th>
-                        <td><div id ="history4-1"></div></td>
-                        <td><div id ="history4-2"></div></td>
-                        <td><div id ="history4-3"></div></td>
+                        <th scope ="row" style="color:#D3D3D3">4</th>
+                        <td><div id ="history4-1" style="color:white"></div></td>
+                        <td><div id ="history4-2" style="color:white"></div></td>
+                        <td><div id ="history4-3" style="color:white"></div></td>
                     </tr>
                     <tr>
-                        <th scope ="row">5</th>
-                        <td><div id ="history5-1"></div></td>
-                        <td><div id ="history5-2"></div></td>
-                        <td><div id ="history5-3"></div></td>
+                        <th scope ="row" style="color:#D3D3D3">5</th>
+                        <td><div id ="history5-1" style="color:white"></div></td>
+                        <td><div id ="history5-2" style="color:white"></div></td>
+                        <td><div id ="history5-3" style="color:white"></div></td>
                     </tr>
                     <tr>
-                        <th scope ="row">6</th>
-                        <td><div id ="history6-1"></div></td>
-                        <td><div id ="history6-2"></div></td>
-                        <td><div id ="history6-3"></div></td>
+                        <th scope ="row" style="color:#D3D3D3">6</th>
+                        <td><div id ="history6-1" style="color:white"></div></td>
+                        <td><div id ="history6-2" style="color:white"></div></td>
+                        <td><div id ="history6-3" style="color:white"></div></td>
                     </tr>
                     <tr>
-                        <th scope ="row">7</th>
-                        <td><div id ="history7-1"></div></td>
-                        <td><div id ="history7-2"></div></td>
-                        <td><div id ="history7-3"></div></td>
+                        <th scope ="row" style="color:#D3D3D3">7</th>
+                        <td><div id ="history7-1" style="color:white"></div></td>
+                        <td><div id ="history7-2" style="color:white"></div></td>
+                        <td><div id ="history7-3" style="color:white"></div></td>
                     </tr>
                     <tr>
-                        <th scope ="row">8</th>
-                        <td><div id ="history8-1"></div></td>
-                        <td><div id ="history8-2"></div></td>
-                        <td><div id ="history8-3"></div></td>
+                        <th scope ="row" style="color:#D3D3D3">8</th>
+                        <td><div id ="history8-1" style="color:white"></div></td>
+                        <td><div id ="history8-2" style="color:white"></div></td>
+                        <td><div id ="history8-3" style="color:white"></div></td>
                     </tr>
                     <tr>
-                        <th scope ="row">9</th>
-                        <td><div id ="history9-1"></div></td>
-                        <td><div id ="history9-2"></div></td>
-                        <td><div id ="history9-3"></div></td>
+                        <th scope ="row" style="color:#D3D3D3">9</th>
+                        <td><div id ="history9-1" style="color:white"></div></td>
+                        <td><div id ="history9-2" style="color:white"></div></td>
+                        <td><div id ="history9-3" style="color:white"></div></td>
                     </tr>
                 </tbody>
             </table>
